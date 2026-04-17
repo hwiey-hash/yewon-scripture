@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시험기간 리영이를 향한 하나님의 메세지</title>
+
+  <!-- OG 메타태그 (카카오톡/SNS 공유) -->
+  <meta property="og:title" content="시험기간 리영이를 향한 하나님의 메세지">
+  <meta property="og:description" content="동물 친구를 눌러서 하나님의 메세지를 받아보세요 🐰🐻🐱🐶🦊🐼">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- 배경 파티클 -->
+  <div id="particles" aria-hidden="true"></div>
+
+  <!-- 메인 컨테이너 -->
+  <main class="container">
+    <header class="header">
+      <h1 class="title">시험기간 리영이를 향한<br>하나님의 메세지</h1>
+      <p class="subtitle">동물 친구를 눌러보세요</p>
+    </header>
+
+    <section class="characters-grid" id="characters-grid"></section>
+  </main>
+
+  <!-- 구절 모달 -->
+  <div id="verse-modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="성경 구절">
+    <div class="modal-overlay"></div>
+    <div class="verse-card">
+      <button class="close-btn" aria-label="닫기">&times;</button>
+      <div class="verse-character" id="verse-character"></div>
+      <p class="verse-cheering" id="verse-cheering"></p>
+      <div class="verse-content">
+        <p class="verse-korean" id="verse-korean"></p>
+        <p class="verse-english" id="verse-english"></p>
+        <p class="verse-reference" id="verse-reference"></p>
+      </div>
+      <div class="verse-actions">
+        <button class="btn btn-another" id="btn-another">다른 말씀 보기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 토스트 메시지 -->
+  <div id="toast" class="toast hidden">복사되었습니다!</div>
+
+  <script src="data/verses.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
